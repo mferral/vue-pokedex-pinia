@@ -3,7 +3,7 @@
     const pokemons = usePokemonsStore()
 </script>
 <template>
-    <section class="pokedex">
+    <section class="pokedex">        
         <div class="pokemon" v-for="(pokemon, index) in pokemons.getPokemons" :key="index" :data-name="pokemon.item.name" data-type="fire" :tabindex="index">
             <figure class="pokemon-figure">
                 <img 

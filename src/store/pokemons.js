@@ -6,9 +6,11 @@ export const usePokemonsStore = defineStore({
     id: 'pokemons',
     state: () => ({
         pokemons: [],
+        loading: false,
     }),
     actions: {
         async morePokemons() {
+            this.$state.loading = true
             const offset = Math.random() * (700 - 1) + 1
             const responseArray = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=${offset}`)
             const responseJson = await responseArray.json()
@@ -24,7 +26,8 @@ export const usePokemonsStore = defineStore({
                 }
             })
             const pokemons = await Promise.all(pokemonsMap)
-
+            
+            this.$state.loading = false
             this.$state.pokemons = [
                 ...pokemons,
                 ...this.$state.pokemons,
@@ -34,6 +37,9 @@ export const usePokemonsStore = defineStore({
     getters: {
         getPokemons(state) {
             return state.pokemons
+        },
+        isLoading(state) {
+            return state.loading
         },
     },
 })
