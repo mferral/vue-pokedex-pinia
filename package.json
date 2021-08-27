@@ -1,5 +1,5 @@
 {
-  "name": "vue-pinia",
+  "name": "vue-pokedex-pinia",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "pinia": "^2.0.0-rc.6",
     "vue": "^3.0.0"
   },
   "devDependencies": {

@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Main />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #212121;
+    color: #fff;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.pokedex-control {
+    margin: 2rem 0 3rem;
+    display: grid;
+    grid-template-columns: 17rem;
+    grid-gap: .5rem;
+    justify-content: center;
 }
 </style>

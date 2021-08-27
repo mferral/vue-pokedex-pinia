@@ -1,4 +1,4 @@
-# vue-pinia
+# vue-pokedex-pinia
 
 ## Project setup
 ```
