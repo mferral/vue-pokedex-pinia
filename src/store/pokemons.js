@@ -25,8 +25,7 @@ export const usePokemonsStore = defineStore({
                     info
                 }
             })
-            const pokemons = await Promise.all(pokemonsMap)
-            
+            const pokemons = await Promise.all(pokemonsMap)            
             this.$state.loading = false
             this.$state.pokemons = [
                 ...pokemons,
