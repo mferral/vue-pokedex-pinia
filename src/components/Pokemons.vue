@@ -124,7 +124,7 @@
 }
 
 .pokemon .pokemon-stats .stat-bar {
-    background-color: #f2f2f2;
+    background-color: #a2a2a2;
 }
 
 .pokemon .pokemon-stats .stat-bar-bg {
