@@ -13,22 +13,18 @@ export const usePokemonsStore = defineStore({
             const responseArray = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=${offset}`)
             const responseJson = await responseArray.json()
             const pokemonsMap = responseJson.results.map(async (item) => {
-                const responseItem =  await fetch(item.url)
+                const responseItem = await fetch(item.url)
                 const info = await responseItem.json()
-                
-                info.stats.forEach((stat) => {                                        
-                    stat['percent_base'] = (100 * stat.base_stat)/200
-                    })
-                
-                
-                return{
+                info.stats.forEach((stat) => {
+                    stat['percent_base'] = (100 * stat.base_stat) / 200
+                })
+                return {
                     item,
                     info
                 }
             })
             const pokemons = await Promise.all(pokemonsMap)
-            
-            console.log( pokemons);
+
             this.$state.pokemons = [
                 ...pokemons,
                 ...this.$state.pokemons,
