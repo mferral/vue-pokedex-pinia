@@ -3,6 +3,9 @@
 ![snap](https://raw.githubusercontent.com/mferral/vue-pokedex-pinia/main/public/snap.png)
 
 
+🔥 [Live Demo](https://mferral.github.io/vue-pokedex-pinia/)
+
+
 Builded by.
 
 - Vue 3
