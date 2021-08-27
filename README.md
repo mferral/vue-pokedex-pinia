@@ -1,4 +1,17 @@
-# vue-pokedex-pinia
+# Pokedex
+
+![snap](https://raw.githubusercontent.com/mferral/vue-pokedex-pinia/main/public/snap.png)
+
+
+Builded by.
+
+- Vue 3
+- 🍍 [State Management via Pinia](https://pinia.esm.dev/).
+- ⚡️ Vue 3 - born with fastness
+- ✨Magic ✨
+
+
+## Installation
 
 ## Project setup
 ```
@@ -20,5 +33,9 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+MIT
+
+**Free Software, Hell Yeah!**
+
